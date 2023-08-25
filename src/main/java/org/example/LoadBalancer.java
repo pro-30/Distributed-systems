@@ -17,6 +17,7 @@ public class LoadBalancer
         System.out.println( "Load Balancer Started at port : "+ 8081 );
 
 
+        // always open to receive client request.
         while(true){
             //wait for a client , once client comes create a TCP Connection after 3 way handshake
             Socket socket = serverSocket.accept();
